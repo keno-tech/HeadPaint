@@ -11,6 +11,24 @@
 		F74709590C5B4682F39B7C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41E8D35A91BED588C0E1B5C /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D354B7DC765F04D2C192DE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9DF1C162F41DB3400D1DA83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9DF1C1D2F41DB3400D1DA83;
+			remoteInfo = HeadPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		D354B7DD765F04D2C192DE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9DF1C1D2F41DB3400D1DA83 /* HeadPaint */;
+			targetProxy = D354B7DC765F04D2C192DE6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXFileReference section */
 		1F38E33DCDD6EB801D1A6AD1 /* HeadPaintTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeadPaintTests.swift; sourceTree = "<group>"; };
 		5F24E1753DA362A5C9E78217 /* HeadPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +125,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D354B7DD765F04D2C192DE6C /* PBXTargetDependency */,
 			);
 			name = HeadPaintTests;
 			productName = HeadPaintTests;
