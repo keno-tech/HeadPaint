@@ -6,19 +6,38 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52CC7944E90288F583E7E2DF /* HeadPaintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E33DCDD6EB801D1A6AD1 /* HeadPaintTests.swift */; };
+		F74709590C5B4682F39B7C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41E8D35A91BED588C0E1B5C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1F38E33DCDD6EB801D1A6AD1 /* HeadPaintTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeadPaintTests.swift; sourceTree = "<group>"; };
+		5F24E1753DA362A5C9E78217 /* HeadPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41E8D35A91BED588C0E1B5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B9DF1C1E2F41DB3400D1DA83 /* HeadPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D354B7DB765F04D2C192DE6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B9DF1C202F41DB3400D1DA83 /* HeadPaint */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = HeadPaint;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		97C5DF89962F2C5E6B820A4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74709590C5B4682F39B7C60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9DF1C1B2F41DB3400D1DA83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,11 +48,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D8DDC4F81E68F24199C5858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA4548635AEE9800EE90B66E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69E37624C62DB12F66579F94 /* HeadPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F38E33DCDD6EB801D1A6AD1 /* HeadPaintTests.swift */,
+				D354B7DB765F04D2C192DE6A /* Info.plist */,
+			);
+			name = HeadPaintTests;
+			path = HeadPaintTests;
+			sourceTree = "<group>";
+		};
 		B9DF1C152F41DB3400D1DA83 = {
 			isa = PBXGroup;
 			children = (
 				B9DF1C202F41DB3400D1DA83 /* HeadPaint */,
 				B9DF1C1F2F41DB3400D1DA83 /* Products */,
+				3D8DDC4F81E68F24199C5858 /* Frameworks */,
+				69E37624C62DB12F66579F94 /* HeadPaintTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,13 +80,39 @@
 			isa = PBXGroup;
 			children = (
 				B9DF1C1E2F41DB3400D1DA83 /* HeadPaint.app */,
+				5F24E1753DA362A5C9E78217 /* HeadPaintTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EA4548635AEE9800EE90B66E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B41E8D35A91BED588C0E1B5C /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		72AE647D47EB233B23F6DDA1 /* HeadPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9380CA4C37AAC52E9CE59D2C /* Build configuration list for PBXNativeTarget "HeadPaintTests" */;
+			buildPhases = (
+				800FFD406570CBE43524FAF8 /* Sources */,
+				97C5DF89962F2C5E6B820A4A /* Frameworks */,
+				990B6EADCDB2E40434C40E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadPaintTests;
+			productName = HeadPaintTests;
+			productReference = 5F24E1753DA362A5C9E78217 /* HeadPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B9DF1C1D2F41DB3400D1DA83 /* HeadPaint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9DF1C292F41DB3500D1DA83 /* Build configuration list for PBXNativeTarget "HeadPaint" */;
@@ -64,8 +129,6 @@
 				B9DF1C202F41DB3400D1DA83 /* HeadPaint */,
 			);
 			name = HeadPaint;
-			packageProductDependencies = (
-			);
 			productName = HeadPaint;
 			productReference = B9DF1C1E2F41DB3400D1DA83 /* HeadPaint.app */;
 			productType = "com.apple.product-type.application";
@@ -100,11 +163,19 @@
 			projectRoot = "";
 			targets = (
 				B9DF1C1D2F41DB3400D1DA83 /* HeadPaint */,
+				72AE647D47EB233B23F6DDA1 /* HeadPaintTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		990B6EADCDB2E40434C40E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9DF1C1C2F41DB3400D1DA83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +186,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		800FFD406570CBE43524FAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CC7944E90288F583E7E2DF /* HeadPaintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9DF1C1A2F41DB3400D1DA83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +204,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8123242CBD289517DE3F408A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HeadPaint/HeadPaintTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keno.HeadPaintTests;
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadPaint.app/HeadPaint";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		B9DF1C272F41DB3500D1DA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,9 +426,35 @@
 			};
 			name = Release;
 		};
+		DD0997CE5E0CD23BF7FDF97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HeadPaint/HeadPaintTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keno.HeadPaintTests;
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadPaint.app/HeadPaint";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9380CA4C37AAC52E9CE59D2C /* Build configuration list for PBXNativeTarget "HeadPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8123242CBD289517DE3F408A /* Release */,
+				DD0997CE5E0CD23BF7FDF97F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B9DF1C192F41DB3400D1DA83 /* Build configuration list for PBXProject "HeadPaint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -45,23 +45,25 @@
 * [ ] **Ticket-5:** Mapping Motion Data to Brush Strokes
 
 ### 🚧 In Progress
-* **Ticket-1:** Project Initialization & CI Setup
+* *None*
 
 ### ✅ Completed
-* *None*
+* **Ticket-1:** Project Initialization & CI Setup
 
 ---
 
 ## 📂 Active Ticket Details
 
-### **Ticket-1:** Project Initialization & CI Setup
-See [Ticket-1.md](file:///Users/keno/Desktop/test/HeadPaint/tickets/Ticket-1.md) for details.
+*This section will be populated when you ask me to generate or pick up a ticket.*
 
 ---
 
 ## 📚 Completed Tickets Archive
 
-*Move completed ticket details here for history tracking.*
+## 📚 Completed Tickets Archive
+
+### **Ticket-1:** Project Initialization & CI Setup
+See [Ticket-1.md](file:///Users/keno/Desktop/test/HeadPaint/tickets/Ticket-1.md) for details.
 
 ---
 
