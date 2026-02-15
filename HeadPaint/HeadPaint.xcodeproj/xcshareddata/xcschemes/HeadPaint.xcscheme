@@ -42,7 +42,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "72AE647D47EB233B23F6DDA1"
-               BuildableName = ".xctest"
+               BuildableName = "HeadPaintTests.xctest"
                BlueprintName = "HeadPaintTests"
                ReferencedContainer = "container:HeadPaint.xcodeproj">
             </BuildableReference>
